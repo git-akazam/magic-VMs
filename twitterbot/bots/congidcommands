@@ -1,0 +1,48 @@
+ export CONSUMER_KEY=""
+$ export CONSUMER_SECRET=""
+$ export ACCESS_TOKEN=""
+$ export ACCESS_TOKEN_SECRET=""
+
+
+#1
+source ./venv/bin/activate
+
+#2
+$ python bots/followfollowers.py
+
+#3
+tweetv33.py
+
+v2
+
+export CONSUMER_KEY=''
+export CONSUMER_SECRET=''
+
+For samples which use bearer token authentication, you will need to export the bearer token. Be sure to replace <your_bearer_token> with your own bearer token without the < >.
+
+export BEARER_TOKEN='<your_bearer_token>'
+
+
+"oauth_token")
+
+resource_owner_secret = fetch_response.get("oauth_token_secret")
+
+
+
+
+Accessttoken secret
+
+
+fsFuhGW0RL5HagfbSGsX4Z8GnoM9iJlHAgoKUSGW4NlUH
+
+ export oauth_token=""
+ export oauth_token_secret=""
+
+https://docs.tweepy.org/en/stable/examples.html
+
+
+sudo -H pip install tweepy
+
+pip install requests
+pip install requests-oauthlib
+

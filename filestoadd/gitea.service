@@ -1,0 +1,19 @@
+[Unit]
+Description=Gitea
+After=syslog.target
+After=network.target
+Requires=mysql.service
+
+[Service]
+RestartSec=3s
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/var/lib/gitea/
+
+ExecStart=/usr/local/bin/gitea web --config /etc/gitea/app.ini
+Restart=always
+Environment=USER=git HOME=/home/git GITEA_WORK_DIR=/var/lib/gitea
+
+[Install]
+WantedBy=multi-user.target

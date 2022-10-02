@@ -1,0 +1,332 @@
+UBUNTU22.04
+
+#!/bin/bash
+
+sudo chmod +x akazamnodes.sh
+
+
+
+
+cd ..
+
+
+sudo apt update
+
+sudo apt install wget
+
+sudo apt install git
+
+sudo apt install mariadb-server -Y
+
+sudo mysql -u root -p
+
+CREATE DATABASE gitea;
+
+
+GRANT ALL PRIVILEGES ON gitea.* TO 'gitea'@'localhost' IDENTIFIED BY "akazama33ey842@1";
+
+FLUSH PRIVILEGES;
+QUIT;
+
+
+
+
+
+
+sudo wget -O /usr/local/bin/gitea https://dl.gitea.io/gitea/1.16.7/gitea-1.16.7-linux-amd64
+
+sudo chmod +x /usr/local/bin/gitea
+
+
+#verify
+gitea --version
+
+
+
+sudo adduser --system --shell /bin/bash --gecos 'Git Version Control' --group --disabled-password --home /home/git git
+
+sudo mkdir -pv /var/lib/gitea/{custom,data,log}
+
+sudo chown -Rv git:git /var/lib/gitea
+
+sudo chmod -Rv 750 /var/lib/gitea
+
+
+sudo mkdir -v /etc/gitea
+
+
+sudo chown -Rv root:git /etc/gitea
+
+sudo chmod -Rv 770 /etc/gitea
+
+
+sudo nano /etc/systemd/system/gitea.service
+
+ctrl-c 
+
+[Unit]
+Description=Gitea
+After=syslog.target
+After=network.target
+Requires=mysql.service
+
+[Service]
+RestartSec=3s
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/var/lib/gitea/
+
+ExecStart=/usr/local/bin/gitea web --config /etc/gitea/app.ini
+Restart=always
+Environment=USER=git HOME=/home/git GITEA_WORK_DIR=/var/lib/gitea
+
+[Install]
+WantedBy=multi-user.target
+
+ctrl-v
+
+
+
+sudo systemctl start gitea
+hostname -I
+
+
+:3000
+
+
+
+
+
+akazamautorepo.sh
+
+
+mkdir akazama
+
+cd akazam
+
+touch READAKAZAM.mk
+
+
+git init
+
+git add -A
+
+
+
+
+git config --global user.email "kitkat@akazam.eth"
+
+git config --global user.name "Kitkat"
+
+git commit -m "first commit"
+
+
+#git remote add origin http://localhost:3000/gitea/akazam/git
+#git push --set-upstream origin master
+
+
+
+git remote add master http://localhost:3000/gitea/Akazam.git
+
+
+
+git clone
+
+
+* 
+Ls -a
+Rm -r .git
+
+git rm --cached resources
+
+
+git remote add master http://localhost:3000/gitakazam/dapptemplatedata.git
+Git push -u master
+
+git commit -am “message about changes” (for all files tracked even if changes are not in staging area)
+
+
+
+
+
+sudo apt remove cmdtest
+sudo apt remove yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update
+sudo apt-get install yarn -y
+
+
+
+
+
+
+
+sudo apt install xdg-utils
+
+sudo xdg-open 'http://167.99.9.85:3000'
+
+
+export DISPLAY=yourmachine.yourdomain.com:0.0
+
+
+sudo firefox http://167.99.9.85:3000
+
+
+sudo apt install firefox
+
+sudo xhost +si:localuser:root
+
+
+
+sudo apt -y install x11-apps
+
+
+
+export DISPLAY=0.0
+
+
+sudo apt-get install slim
+
+
+apt-get install firefox x-window-system gnome-core
+
+
+sudo service SLiM start
+
+sudo service lightdm start
+
+
+sudo apt update && apt upgrade
+
+
+sudo apt install ubuntu-desktop
+
+
+
+sudo systemctl start lightdm.Service
+
+
+sudo tasksel
+
+
+sudo apt-get install lightdm
+
+sudo systemctl start lightdm
+
+sudo systemctl start xrdp 
+
+
+sudo apt-get update && sudo apt-get dist-upgrade -y
+
+sudo apt-get install ubuntu-desktop ubuntu-gnome-desktop gnome-core xrdp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lightdm
+
+
+
+sudo passwd
+
+
+sudo apt update
+
+sudo apt-get update && sudo apt-get dist-upgrade -y
+
+sudo apt update && apt upgrade
+
+
+sudo apt install xubuntu-desktop
+
+sudo apt install xrdp
+
+sudo reboot
+
+sudo systemctl status xrdp
+
+sudo adduser xrdp ssl-cert
+
+sudo systemctl restart xrdp
+
+sudo ufw allow 3389
+
+#sudo ufw allow from 192.168.2.0/24 to any port 3389 (for specific IP address)
+
+sudo ufw reload
+
+
+
+sudo service xrdp stop
+
+
+sudo nano /etc/xrdp/startwm.sh
+
+comment last two lines
+startxfce4
+
+
+sudo systemctl status xrdp
+sudo service xrdp start
+
+
+ipv4
+
+
+
+
+
+
+To fix the common issue:
+
+Stop xrdp with sudo service xrdp stop
+
+Edit the xrdp start script: sudo nano /etc/xrdp/startwm.sh
+
+In this file, replace the lines
+
+test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+exec /bin/sh /etc/X11/Xsession
+with startxfce4
+
+(You can comment out lines by adding # at the start)
+
+Restart xrdp with sudo service xrdp start
+
+Select Xrdp as the session, and log in.
+
+
+
+
+
+
+sudo apt install x11-xserver-utils
+
+
+
+sudo apt install firefox
+
+xhost si:localuser:root
+
+
+sudo firefox http://google.com
+
+
+
+
+
