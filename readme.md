@@ -58,11 +58,14 @@ add to github
 
 
 firefox:
-
+bash firefox.sh
 
 
 optimize speed:
+bash optimizespeed.sh
 
+dapp#1:
+bash dapp1.sh
 
 
 
