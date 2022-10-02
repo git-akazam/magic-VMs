@@ -1,3 +1,9 @@
+apt install npm
+
+
+npm install -g npm and then
+ npm install -g node.
+
 npx create-next-app -e https://github.com/sasicodes/next-eth
 Install all dependencies,
 
