@@ -1,3 +1,71 @@
 write append output to sqlite
 
 figute out the append files to automate
+
+
+
+1. Create a new branch by issuing the command:git checkout -b new_branch
+2. Create a new remote for the upstream repo with the command:git remote add upstream https://github.com/kedark3/demo
+In this case, "upstream repo" refers to the original repo you created your fork from.
+Now you can make changes to the code. The following code creates a new branch, makes an arbitrary change, and pushes it to new_branch:
+$ git checkout -b new_branch
+Switched to a new branch ‘new_branch’
+$ echo “some test file” > test
+$ cat test
+Some test file
+$ git status
+
+On branch new_branch
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    test
+nothing added to commit but untracked files present (use "git add" to track) 
+$ git add test
+$ git commit files
+
+ new_branch"
+[new_branch (root-commit) 4265ec8] Adding a test file to new_branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+$ git push -u origin 
+
+:x
+:x
+
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 918 bytes | 918.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+Remote: Create a pull request for ‘new_branch’ on GitHub by visiting:
+Remote:   http://github.com/example/Demo/pull/new/new_branch
+Remote: 
+ * [new branch]         new_branch -> new_branch
+Once you push the changes to your repo, the Compare & pull request 
+
+
+
+
+tutorial to create branches and pull requests: 
+
+
+1. git add -A
+2. Copy to Clipboard
+3. Use the status command to check that all files you are about to commit are correct (you want to include source files, not binaries, temporary files etc.). It should look a bit like the listing below.>  git status
+4. On branch main
+5. Your branch is up-to-date with 'origin/main'.
+6. Changes to be committed:
+7.   (use "git reset HEAD <file>..." to unstage)
+8. 
+9.         modified:   .gitignore
+10.         new file:   catalog/__init__.py
+11.         ...
+12.         new file:   catalog/migrations/0001_initial.py
+13.         ...
+14.         new file:   templates/registration/password_reset_form.html
+15. Copy to Clipboard
+16. When you're satisfied, commit the files to your local repository. This is essentially equivalent to signing off on the changes and making them an official part of the local repository.git commit -m "First version of application moved into GitHub"
+17. Copy to Clipboard
+18. At this point, the remote repository has not been changed. Synchronize (push) your local repository to the remote GitHub repository using the following command:git push origin main
+
