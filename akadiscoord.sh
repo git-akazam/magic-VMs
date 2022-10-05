@@ -18,5 +18,11 @@ wait $!
 echo "Process 10 ended at time $(date +%T) with exit status $?"
 wait
 
+#PID=$!
+#echo "installreq" && python3 -m pip install discord.py & sleep 1 &
+#wait $!
+#echo "Process 10 ended at time $(date +%T) with exit status $?"
+#wait
+
 
 

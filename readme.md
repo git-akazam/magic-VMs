@@ -26,18 +26,15 @@ bash aka11.sh # Choose light dm
 bash aka22.sh
 ```
 
-### Start VM
+### Start VM Modifications(Manually)
 ```sh
 sudo nano /etc/xrdp/startwm.sh
 ```
 
-
-
 1. comment last two lines
 2. add startxfce4 on last
-3. or copy paste startwm.sh in /filestoadd
 
-### Copy startwm to files to add
+### Start VM Modifications(Automatically)
 
 ```sh
 rm ∼/etc/xrdp/startwm.sh 
@@ -63,6 +60,8 @@ sudo chmod +x akastart.sh
 bash akastart.sh
 ```
 ## All set now
+
+## Future improvements:
 akastart makes autostart run which makes aka1 and ak2 run 
 
 akazamauto is into:
@@ -75,7 +74,7 @@ akagit is selfhosted git
 akazamauto and akazam are full files which includes trial and errors file **do not run them** 
 
 
-# Setup
+# More Setup
 1. Setup SSH
 ```sh
 ssh-keygen
@@ -85,76 +84,198 @@ cat /.ssh/id_rsa.pub
 2.  Add to github
 add to github
 
-3. Run firefox
+3. Install firefox
 ```sh
-bash firefox.sh
+bash akafirefox.sh
 ```
+
+to run firefox: 
+```sh
+bash akafox.sh
+```
+
+
 4. optimize Speed
 
 ```sh
-bash optimizespeed.sh
+bash akaspeed.sh
 ```
 5. Run first dApp
 ```sh
 bash dapp1.sh
 ```
 
+View processes and VMs infos:
+```sh
+stacer
+```
+
+More Optimizatiions:
+
+XRDP setting:
+color quality : medium
+interpolation level: low
+
+
+
+
+Opem windows manager tweak: disable compositor
+https://blog.programster.org/xfce-slow-desktop-compositing
+
+
+sudo nano /etc/xrdp/xrdp.ini file,
+
+ change crypt_level=high to crypt_level=None
+
+
+
+
+
+## Install More tools
+
+Screen:
+```sh
+bash akascreen.sh
+```
+tutorial:
+
 python:
+```sh
+bash akapython.sh
+```
+
 
 web3:
+```sh
+bash akamweb3.sh
+```
 
 
 react website:
+```sh
+bash akareact.sh
+```
 
 
 
 npm:
+```sh
+bash .sh
+```
 
 
 nvm:
+```sh
+bash .sh
+```
 
 
 
 visual studio:
-bash visualstudio.sh
+Install:
+```sh
+bash akavisualstudio.sh
+```
+
+Run:
+```sh
+bash akastudio.sh
+```
 
 
-web3
+## Launnch your own nodes
 
 eth nodes: 
-
-
-
-dApp launch:
-clone akazam repo templates:
-
-
-twitter bot:
-
-
-ens bot:
-
-
-
-eth nodes:
-
-
+```sh
+bash akanodes.sh
+```
 
 batch block request:
+```sh
+python3 batchsample.py
+```
+to save data:
+```sh
+python3 appendbatchsample.py
+```
 
 
 index block data:
+```sh
+
+```
+https://thegraph.com/docs/en/network/indexing/
+
+
+
+dApp templates:
+
+clone akazam templates:
+
+```sh
+bash .sh
+```
+
+
+
+## more tools
+
+twitter bot:
+```sh
+bash akatwitter.sh
+```
+
+
+ens bot:
+Install web3py
+then 
+Open enssample.py in visual studio and run with:
+Input infura key
+```sh
+python3 enssampleinfura.py
+```
+
+
 
 
 discord bot:
+```sh
+bash akadiscord.sh
+```
 
 
+## OS Int
 spiderfoot:
+```sh
+bash akaspiderfoot.sh
+```
 
 
+
+## Simulating Keyboard Press
 
 xdo tool:
+```sh
+bash akaxdotool.sh
+```
+
+tutorial:
+#XDOKeys.pdf
+#xdotool key KP_Enter
 
 
 
+
+Build with us!
+
+Write automation scripts with Bash.
+https://devdocs.io/bash/
+
+
+Name them : aka****.sh
+
+Test them: 
+
+Pull request:
+https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/
 

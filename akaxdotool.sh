@@ -11,4 +11,3 @@ wait
 
 
 
-xdotool key KP_Enter
