@@ -41,11 +41,11 @@ wait
 
 #enterpassw
 
-
+####
 
 
 PID=$!
-echo "createdata" && CREATE DATABASE gitea; & sleep 1 
+echo "createdata" && CREATE DATABASE gitea; & sleep 1 &
 wait $!
 echo "Process 19 ended at time $(date +%T) with exit status $?"
 wait
@@ -143,6 +143,10 @@ echo "Process 32 ended at time $(date +%T) with exit status $?"
 wait
 
 
+
+
+###
+
 PID=$!
 echo "sed" && sed -i '/import pycurl/i' / 
 import sys /
@@ -151,8 +155,6 @@ sys.path.append("/etc/systemd/system") opt/gitea.service
 wait $!
 echo "Process 33 ended at time $(date +%T) with exit status $?"
 wait
-
-
 
 
 
@@ -185,6 +187,7 @@ wait
 
 
 
+##
 
 PID=$!
 echo "importsys" && import sys & sleep 1 &
@@ -201,7 +204,7 @@ echo "Process 35 ended at time $(date +%T) with exit status $?"
 wait
 
 
-
+###
 
 
 

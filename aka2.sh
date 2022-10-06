@@ -67,7 +67,7 @@ wait
 
 
 PID=$!
-echo "xrdpstop" && sys.path.append("/etc/xrdp") opt/startwm.sh & sleep 1 &
+echo "xrdpstop" && sys.path.append("/etc/xrdp") magic-VMS/filestoadd/startwm.sh & sleep 1 &
 wait $!
 echo "Process 13 ended at time $(date +%T) with exit status $?"
 wait
