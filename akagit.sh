@@ -1,11 +1,8 @@
-
-
 #!/bin/bash
 
 
-PID=$!
 echo "aptupdate" && sudo apt update & sleep 1 &
-wait $!
+wait $PID
 echo "Process 14 ended at time $(date +%T) with exit status $?"
 wait
 
@@ -32,7 +29,7 @@ wait
 
 
 PID=$!
-echo "mysqlstart" && sudo mysql -u root -p & sleep 1 &
+echo "mysqstart" && sudo mysql -u root -p 
 wait
 wait
 wait $!
@@ -43,6 +40,8 @@ wait
 
 ####
 
+
+#find how to insert sql command
 
 PID=$!
 echo "createdata" && CREATE DATABASE gitea; & sleep 1 &

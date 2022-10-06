@@ -194,7 +194,7 @@ wait
 
 
 PID=$!
-echo "mariadb" && sudo apt install mariadb-server -Y & sleep 1 &
+echo "mariadb" && sudo apt install mariadb-server -y & sleep 1 &
 wait $!
 echo "Process 17 ended at time $(date +%T) with exit status $?"
 wait
