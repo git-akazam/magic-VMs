@@ -14,6 +14,9 @@ Akazam is perfect for developers who want to quickly get started with developing
 ```sh
 sudo chmod +x akalightstart.sh
 ```
+```sh
+bash akalightstart.sh
+```
 ### Setup theme
 ```sh
 bash aka11.sh # Choose light dm
