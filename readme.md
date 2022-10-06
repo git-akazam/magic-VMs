@@ -142,11 +142,16 @@ sudo nano /etc/xrdp/xrdp.ini file,
 
 ## Install More tools
 
+AppFlowy(similar to Notion):
+```sh
+bash akaappflowy.sh
+```
+
 Screen:
 ```sh
 bash akascreen.sh
 ```
-tutorial:
+tutorial:inside akascreen.sh
 
 python:
 ```sh
