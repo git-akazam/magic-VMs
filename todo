@@ -1,7 +1,7 @@
 write append output to sqlite
 
 figute out the append files to automate
-
+add screen from beginning to not sleep 
 
 
 1. Create a new branch by issuing the command:git checkout -b new_branch
