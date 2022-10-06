@@ -111,7 +111,7 @@ bash akaspeed.sh
 ```
 5. Run first dApp
 ```sh
-bash dapp1.sh
+bash akadapp1.sh
 ```
 
 View processes and VMs infos:
@@ -143,8 +143,13 @@ sudo nano /etc/xrdp/xrdp.ini file,
 ## Install More tools
 
 AppFlowy(similar to Notion):
+install
 ```sh
 bash akaappflowy.sh
+```
+run
+```sh
+bash akaflowy.sh
 ```
 
 Screen:

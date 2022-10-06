@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "removeneed" && bash akazamnpm&yarn.sh & sleep 1 &
+echo "removeneed" && bash akanpmyarn.sh & sleep 1 &
 wait $PID
 echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
