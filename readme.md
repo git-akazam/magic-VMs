@@ -12,6 +12,12 @@ Akazam is perfect for developers who want to quickly get started with developing
 
 ### Initialization
 ```sh
+git clone https://github.com/git-akazam/magic-VMs.git
+```
+```sh
+cd magic-Vms
+```
+```sh
 sudo chmod +x akalightstart.sh
 ```
 ```sh
