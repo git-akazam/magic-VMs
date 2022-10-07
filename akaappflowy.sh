@@ -28,12 +28,12 @@ wait $PID
 echo "Process 4 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "installcargo" && apt install cargo & sleep 5 &
+echo "installcargo" && apt install cargo -y & sleep 5 &
 wait $PID
 echo "Process 5 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "installflutter" && snap install flutter --classic & sleep 5 &
+echo "installflutter" && snap install flutter --classic -y & sleep 5 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
@@ -53,7 +53,7 @@ wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "rustup" && snap install rustup --classic & sleep 5 &
+echo "rustup" && snap install rustup --classic -y & sleep 5 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait

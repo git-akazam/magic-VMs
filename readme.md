@@ -18,9 +18,6 @@ git clone https://github.com/git-akazam/magic-VMs.git
 cd magic-Vms
 ```
 ```sh
-sudo chmod +x akalightstart.sh
-```
-```sh
 bash akalightstart.sh
 ```
 ### Setup theme
@@ -59,20 +56,16 @@ bash aka33.sh
 Once Akazam is setup,
 Login with root password and ip address trough Microsoft Remote Desktop:
 
-## upgrade
 
-```sh
-sudo chmod +x akastart.sh
-```
-
-```sh
-bash akastart.sh
-```
 ## All set now
 
 ## Future improvements:
 akastart makes autostart run which makes aka1 and ak2 run 
 
+
+
+
+bash akastart.sh
 akazamauto is into:
 aka1
 aka2 
