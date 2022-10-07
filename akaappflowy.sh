@@ -8,7 +8,7 @@ echo "Process 0 ended at time $(date +%T) with exit status $?"
 wait
 #unzip AppFlowy-main.zip
 
-echo "aptinstalls" && sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip & sleep 5 &
+echo "aptinstalls" && sudo apt-get install curl build-essential libsqlite3-dev libssl-dev clang cmake ninja-build pkg-config libgtk-3-dev unzip -y & sleep 5 &
 wait $PID
 echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
@@ -33,12 +33,12 @@ wait $PID
 echo "Process 5 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "installflutter" && snap install flutter --classic -y & sleep 5 &
+echo "installflutter" && snap install flutter --classic & sleep 5 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "cdapp" && cd /appflowy & sleep 1 &
+echo "cdapp" && cd appflowy/ & sleep 1 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
@@ -48,17 +48,25 @@ wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
+#y 
+#1 
+#y
+
+
+####
+
+
 echo "export" && export PATH="$PATH":"$HOME/.pub-cache/bin" & sleep 1 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "rustup" && snap install rustup --classic -y & sleep 5 &
+echo "rustup" && snap install rustup --classic & sleep 5 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "cdfront" && cd /frontend & sleep 1 &
+echo "cdfront" && cd frontend/ & sleep 1 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
@@ -68,7 +76,7 @@ wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "cdpro" && cd product/0.0.5.2/linux/Debug/AppFlowy/ & sleep 1 &
+echo "cdpro" && cd app_flowy/product/0.0.5.2/linux/Debug/AppFlowy/ & sleep 1 &
 wait $PID
 echo "Process 6 ended at time $(date +%T) with exit status $?"
 wait
