@@ -143,3 +143,4 @@ screen -rx
 
 Screen -a
 
+screen -X -S 
