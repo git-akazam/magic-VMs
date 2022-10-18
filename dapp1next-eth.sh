@@ -5,34 +5,19 @@
 #npx create-next-app -e https://github.com/sasicodes/next-eth
 
 
-echo "removeneed" && sudo mkdir projects & sleep 1 &
+echo "mkdpro" && sudo mkdir projects & sleep 1 &
 wait $PID
 echo "Process 0 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "removeneed" && cd projects/ & sleep 1 &
+echo "clone" && cd projects/ && git clone https://github.com/git-akazam/next-eth.git  & sleep 1 &
 wait $PID
-echo "Process 0 ended at time $(date +%T) with exit status $?"
+echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "removeneed" && git clone https://github.com/git-akazam/next-eth.git & sleep 1 &
+echo "installlaunch" && cd projects/ && cd next-eth/ && yarn install && yarn dev & sleep 1 &
 wait $PID
-echo "Process 0 ended at time $(date +%T) with exit status $?"
-wait
-
-echo "removeneed" && cd next-eth/ & sleep 1 &
-wait $PID
-echo "Process 0 ended at time $(date +%T) with exit status $?"
-wait
-
-echo "removeneed" && yarn install & sleep 1 &
-wait $PID
-echo "Process 0 ended at time $(date +%T) with exit status $?"
-wait
-
-echo "removeneed" && yarn dev & sleep 1 &
-wait $PID
-echo "Process 0 ended at time $(date +%T) with exit status $?"
+echo "Process 2 ended at time $(date +%T) with exit status $?"
 wait
 
 
@@ -40,6 +25,8 @@ wait
 
 
 
+#test wallet
+#unique crystal include tenant boat youth hour route mention deliver sunny tuition
 
 #possible fix
 #yarn add husky --dev

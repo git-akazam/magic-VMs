@@ -258,11 +258,14 @@ bash akadiscord.sh
 
 ## OS Int
 spiderfoot:
+install:
 ```sh
-bash akaspiderfoot.sh
+bash akainstallspiderfoot.sh
 ```
-
-
+launch:
+```sh
+bash akaspider.sh
+```
 
 ## Simulating Keyboard Press
 

@@ -17,21 +17,7 @@ echo "Process 15 ended at time $(date +%T) with exit status $?"
 wait
 
 PID=$!
-echo "wgetinstall" && cd spiderfoot-4.0 & sleep 1 &
+echo "wgetinstall" && cd spiderfoot-4.0/ && pip3 install -r requirements.txt && python3 ./sf.py -l 127.0.0.1:5001 & sleep 1 &
 wait $!
 echo "Process 15 ended at time $(date +%T) with exit status $?"
 wait
-
-PID=$!
-echo "wgetinstall" && pip3 install -r requirements.txt & sleep 1 &
-wait $!
-echo "Process 15 ended at time $(date +%T) with exit status $?"
-wait
-
-
-PID=$!
-echo "wgetinstall" && python3 ./sf.py -l 127.0.0.1:5001 & sleep 1 &
-wait $!
-echo "Process 15 ended at time $(date +%T) with exit status $?"
-wait
-
