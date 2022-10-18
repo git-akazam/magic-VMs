@@ -10,7 +10,7 @@ wait $PID
 echo "Process 0 ended at time $(date +%T) with exit status $?"
 wait
 
-echo "removeneed" && cd projects & sleep 1 &
+echo "removeneed" && cd projects/ & sleep 1 &
 wait $PID
 echo "Process 0 ended at time $(date +%T) with exit status $?"
 wait
