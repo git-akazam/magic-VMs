@@ -162,6 +162,20 @@ web3:
 bash akamweb3.sh
 ```
 
+Jekyll Blog:
+install;
+```sh
+bash akablog.sh
+```
+only run
+```sh
+bash akablogrun.sh
+```
+modify
+```sh
+bash akablogmodify.sh
+```
+
 
 react website:
 ```sh
