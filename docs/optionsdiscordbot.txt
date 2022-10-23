@@ -1,0 +1,11 @@
+***await msg.author.kick()***
+***await msg.author.ban()***
+
+
+
+        for text in block_words:
+            if "zira’s disciples (LVL 6)" not in str(msg.author.roles) and text in str(msg.content.lower()):
+          
+                await msg.delete()
+                return
+                
