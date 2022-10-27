@@ -64,6 +64,63 @@ wait
 
 
 
+
+
+Storage: 2TB and then run many nodes from same storage:
+Node as a service
+requirement is : 20 000 IOps
+BlockStorage: 
+
+Hard approach:
+NFSv4: challenge is the IOps for read/write
+ they could add this virtual folder on their machine
+
+
+or We can offer a script to run self hosted nodes:
+where users choose cloud provider or local machine 
+https://www.netcup.eu/
+https://www.alibabacloud.com/free
+https://cloud.google.com/
+kamatera.com/
+or run them locally, no need of cloud, 2tb nvme is pretty cheap locally compared to cloud prices
+
+
+
+Lodestar: docker + geth
+light client 
+
+Nimbus: with geth 
+light client and execution layer
+
+Prysm: with geth 
+
+
+https://eth-clients.github.io/checkpoint-sync-endpoints/
+
+
+
+https://mirror.xyz/ladislaus.eth/O5bW3rDnKITHlCXE9K_0IwiEwDrc6qw-y3MpX0EUcew
+
+
+docker run chainsafe/lodestar lightclient --beaconApiUrl https://lodestar-mainnet.chainsafe.io --checkpointRoot 0xe9dc964f26dacdcffce3c4eb2df01ecb175c17e9909a707c421a10b521d100f2 --network mainnet 
+
+docker cp testy.js ec402a707f0f:usr/app/testy.js
+
+
+docker exec -it silly_joliot node testy.js
+
+docker exec -it silly_joliot sh
+
+docker exec silly_joliot
+
+--JsonRpc.AdditionalRpcUrls "http://localhost:8545"
+
+    command: beacon --dataDir /data --rest --rest.address 0.0.0.0 --metrics --logFile /logs/beacon.log --logFileLevel debug --logFileDailyRotate 5 --jwt-secret /jwtsecret
+
+
+
+ --execution.urls http://127.0.0.1:8551
+
 #how to run light
 
 Nimbus eth1
