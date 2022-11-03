@@ -151,9 +151,14 @@ bash akascreen.sh
 ```
 tutorial:inside akascreen.sh
 
-python:
+python Ubuntu:
 ```sh
-bash akapython.sh
+bash akapythonu.sh
+```
+
+python Debian:
+```sh
+bash akapythond.sh
 ```
 
 
@@ -274,7 +279,7 @@ bash akadiscord.sh
 spiderfoot:
 install:
 ```sh
-bash akainstallspiderfoot.sh
+bash akaspiderfoot.sh
 ```
 launch:
 ```sh

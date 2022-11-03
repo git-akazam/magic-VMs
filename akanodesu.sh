@@ -137,6 +137,9 @@ install curl:
 $ sudo apt update
 $ sudo apt upgrade
 
+sudo apt install software-properties-common
+
+
 Type the following apt command or apt-get command:
 $ sudo apt install curl
 
@@ -148,7 +151,6 @@ sudo apt-get install gnupg
 
 mkdir ethereum && cd ethereum && mkdir consensus && mkdir execution && cd consensus && mkdir prysm && cd prysm && curl https://raw.githubusercontent.com/prysmaticlabs/prysm/master/prysm.sh --output prysm.sh && chmod +x prysm.sh && ./prysm.sh beacon-chain generate-auth-secret
 
-sudo apt install software-properties-common
 
 
 
