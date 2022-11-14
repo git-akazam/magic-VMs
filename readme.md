@@ -298,6 +298,20 @@ tutorial:
 #xdotool key KP_Enter
 
 
+## Retype
+
+retype install:
+```sh
+npm install retypeapp --global
+```
+check updates:
+```sh
+retype watch
+```
+retype push read updates: 
+```sh
+retype build 
+```
 
 
 Build with us!
