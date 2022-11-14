@@ -214,7 +214,7 @@ bash akastudio.sh
 ```
 
 
-## Launnch your own nodes
+## Launch your own nodes
 
 eth nodes: 
 ```sh
