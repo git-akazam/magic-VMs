@@ -218,8 +218,29 @@ bash akastudio.sh
 
 eth nodes: 
 ```sh
+bash akanodesstart.sh
+```
+```sh
+cd
+```
+```sh
 bash akanodes.sh
 ```
+
+
+seperate start  of consensus  client  and execution client
+```sh
+bash akanodesexec.sh
+```
+
+```sh
+bash akanodecons.sh
+```
+
+
+
+
+
 
 batch block request:
 ```sh
@@ -319,6 +340,8 @@ Build with us!
 Write automation scripts with Bash.
 https://devdocs.io/bash/
 
+https://devtut.github.io/bash/jobs-and-processes.html#list-all-processes
+
 
 Name them : aka****.sh
 
@@ -326,4 +349,5 @@ Test them:
 
 Pull request:
 https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/
+
 
