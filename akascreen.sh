@@ -100,3 +100,7 @@ wait
 # Screen -a
 
 # screen -X -S 
+
+#go into attached screen : screen - X
+
+#rename  screen screen -S 25314.pts-0.v2202302185950219674 -X sessionname frontend2
