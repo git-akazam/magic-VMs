@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.721759961017">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.731457743513">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 2.4.0">
@@ -32,12 +32,12 @@
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="resources/css/retype.css?v=2.4.0.721759961017" rel="stylesheet" />
+    <link href="resources/css/retype.css?v=2.4.0.731457743513" rel="stylesheet" />
 
-    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.721759961017" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="resources/js/config.js?v=2.4.0.731457743513" data-turbo-eval="false" defer></script>
     <script type="text/javascript" src="resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.721759961017" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="resources/js/prism.js?v=2.4.0.721759961017" defer></script>
+    <script id="lunr-js" type="text/javascript" src="resources/js/lunr.js?v=2.4.0.731457743513" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="resources/js/prism.js?v=2.4.0.731457743513" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -204,6 +204,16 @@ Akazam is perfect for developers who want to quickly get started with developing
 <div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">bash akalightstart.sh</code></pre>
 </doc-codeblock></div>
+<doc-anchor-target id="update-apt">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#update-apt">#</doc-anchor-trigger>
+        <span>update apt</span>
+    </h3>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">bash aka00.sh </code></pre>
+</doc-codeblock></div>
+<p><em>Press enter</em></p>
 <doc-anchor-target id="setup-theme">
     <h3>
         <doc-anchor-trigger class="header-anchor-trigger" to="#setup-theme">#</doc-anchor-trigger>
@@ -211,7 +221,7 @@ Akazam is perfect for developers who want to quickly get started with developing
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">bash aka11.sh # Choose light dm</code></pre>
+<pre class="language-bash"><code v-pre class="language-bash">bash aka11.sh </code></pre>
 </doc-codeblock></div>
 <p><em>keyarrowdown&amp;enter light dm</em></p>
 <doc-anchor-target id="start-xrdp">
@@ -234,7 +244,8 @@ Akazam is perfect for developers who want to quickly get started with developing
 </doc-codeblock></div>
 <ol>
 <li>comment last two lines</li>
-<li>add startxfce4 on last</li>
+<li>add: startxfce4
+on last the last line</li>
 </ol>
 <doc-anchor-target id="start-vm-modificationsautomatically">
     <h3>
@@ -246,10 +257,10 @@ Akazam is perfect for developers who want to quickly get started with developing
 <pre class="language-bash"><code v-pre class="language-bash">rm ∼/etc/xrdp/startwm.sh 
 cp ∼/filestoadd/starwm.sh ∼/etc/xrdp/startwm.sh</code></pre>
 </doc-codeblock></div>
-<doc-anchor-target id="finally-start-akazam">
+<doc-anchor-target id="finally-start-xrdp-via-akazam">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#finally-start-akazam">#</doc-anchor-trigger>
-        <span>Finally, Start Akazam</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#finally-start-xrdp-via-akazam">#</doc-anchor-trigger>
+        <span>Finally, Start XRDP via Akazam</span>
     </h3>
 </doc-anchor-target>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -334,6 +345,12 @@ interpolation level: low</p>
 <a href="https://blog.programster.org/xfce-slow-desktop-compositing">https://blog.programster.org/xfce-slow-desktop-compositing</a></p>
 <p>sudo nano /etc/xrdp/xrdp.ini file,</p>
 <p>change crypt_level=high to crypt_level=None</p>
+<p>#Login to github via personal dev token FIne grained Classic:
+apt install gh</p>
+<p>gh auth login
+SSH
+Y
+Paste token</p>
 <doc-anchor-target id="install-more-tools">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#install-more-tools">#</doc-anchor-trigger>
@@ -408,7 +425,20 @@ Install:</p>
 </doc-anchor-target>
 <p>eth nodes:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">bash akanodesstart.sh</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">cd</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-bash"><code v-pre class="language-bash">bash akanodes.sh</code></pre>
+</doc-codeblock></div>
+<p>seperate start  of consensus  client  and execution client</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">bash akanodesexec.sh</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">bash akanodecons.sh</code></pre>
 </doc-codeblock></div>
 <p>batch block request:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
@@ -499,6 +529,7 @@ install:</p>
 <p>Build with us!</p>
 <p>Write automation scripts with Bash.
 <a href="https://devdocs.io/bash/">https://devdocs.io/bash/</a></p>
+<p><a href="https://devtut.github.io/bash/jobs-and-processes.html#list-all-processes">https://devtut.github.io/bash/jobs-and-processes.html#list-all-processes</a></p>
 <p>Name them : aka****.sh</p>
 <p>Test them:</p>
 <p>Pull request:
@@ -533,7 +564,7 @@ install:</p>
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2022. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
