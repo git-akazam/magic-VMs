@@ -20,9 +20,16 @@ cd magic-Vms
 ```sh
 bash akalightstart.sh
 ```
-### Setup theme
+### update apt
+
 ```sh
-bash aka11.sh # Choose light dm
+bash aka00.sh 
+```
+*Press enter*
+### Setup theme
+
+```sh
+bash aka11.sh 
 ```
 *keyarrowdown&enter light dm*
 
@@ -38,7 +45,8 @@ sudo nano /etc/xrdp/startwm.sh
 ```
 
 1. comment last two lines
-2. add startxfce4 on last
+2. add: startxfce4 
+on last the last line
 
 ### Start VM Modifications(Automatically)
 
@@ -47,7 +55,7 @@ rm ∼/etc/xrdp/startwm.sh
 cp ∼/filestoadd/starwm.sh ∼/etc/xrdp/startwm.sh
 ```
 
-### Finally, Start Akazam
+### Finally, Start XRDP via Akazam
 ```sh
 bash aka33.sh
 ```
@@ -129,6 +137,14 @@ sudo nano /etc/xrdp/xrdp.ini file,
 
  change crypt_level=high to crypt_level=None
 
+
+#Login to github via personal dev token FIne grained Classic:
+apt install gh
+
+gh auth login
+SSH
+Y
+Paste token
 
 
 
