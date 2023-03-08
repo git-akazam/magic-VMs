@@ -20,6 +20,10 @@ cd magic-Vms
 ```sh
 bash akalightstart.sh
 ```
+
+Go on the root for next commands:
+sudo -s
+cd
 ### update apt
 
 ```sh
