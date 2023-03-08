@@ -338,6 +338,85 @@ tutorial:
 #XDOKeys.pdf
 #xdotool key KP_Enter
 
+## enable root ssh login
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+sudo passwd
+
+sudo systemctl restart ssh
+
+## xrdp possible fixes
+
+nano /etc/xrdp/startwm.sh
+Add in the very top:
+
+unset DBUS_SESSION_BUS_ADDRESS
+unset XDG_RUNTIME_DIR
+then:
+
+sudo systemctl restart xrdp
+
+
+another:
+# echo "startxfce4" > ~/.Xsession
+# chmod +x ~/.Xsession
+# sudo systemctl restart xrdp.service
+
+
+
+or full purge and restart setup from root:
+
+1. Remove previously installed xrdp:
+$ sudo systemctl disable xrdp
+$ sudo systemctl stop xrdp
+
+$ sudo apt purge xrdp
+$ sudo apt purge xserver-xorg-core
+$ sudo apt purge xserver-xorg-input-all
+$ sudo apt purge xorgxrdp
+2. Re-install xrdp & required packages:
+$ sudo apt install xrdp
+$ sudo apt install xserver-xorg-core
+$ sudo apt install xserver-xorg-input-all
+$ sudo apt install xorgxrdp
+You also need to grant access to the /etc/ssl/private/ssl-cert-snakeoil.key file for xrdp user. It is available to members of the ssl-cert group by default.
+
+$ sudo adduser xrdp ssl-cert           # add xrdp into ssl-cert group
+$ sudo systemctl start xrdp            # start xrdp service
+$ systemctl is-active xrdp             # check xrdp state
+...
+active
+$ sudo systemctl enable xrdp           # start xrdp on system start
+3. Reboot system:
+$ sudo reboot
+4. Firewall configuration:
+You need to open access on port 3389.
+
+$ sudo ufw allow 3389
+It is more secure to open it only for your IP address or network. For example:
+
+$ sudo ufw allow from 10.5.5.0/24 to any port 3389
+The best practice is to use an SSH tunnel to connect to the remote desktop and make xRDP listen only for local connections.
+
+5. Setup your RDP-client
+Please note that in some cases the user who will connect to xRDP must log out before doing so!
+
+Connect to your server using any RDP client.
+Enter the user credentials of your Ubuntu computer.
+Now you can see the remote desktop initial screen.
+Related commands:
+$ sudo systemctl status xrdp           # display current xrdp status
+
+$ sudo systemctl start xrdp            # start xrdp service
+$ sudo systemctl stop xrdp             # stop xrdp service
+$ sudo systemctl restart xrdp          # restart xrdp service
+
+$ sudo systemctl enable xrdp           # enable xrdp on system start
+$ sudo systemctl disable xrdp          # disable xrdp on system start
+
+
+
+
 
 ## Retype
 
