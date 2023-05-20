@@ -2,7 +2,7 @@
 
 #login ssh
 
-#install chrome remote desktop
+#install chrome remote desktop https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
 
 sudo apt update
 curl -L -o chrome-remote-desktop_current_amd64.deb \
