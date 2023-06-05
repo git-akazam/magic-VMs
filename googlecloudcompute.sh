@@ -33,3 +33,12 @@ sudo apt install --assume-yes ./google-chrome-stable_current_amd64.deb
 
 #:wq!
 
+
+sudo apt install git
+
+sudo apt update
+
+sudo apt install nodejs
+
+sudo apt install npm
+
