@@ -46,7 +46,7 @@ echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
 
 PID=$!
-echo "installgnupg" && sudo apt-get install gnupg & sleep 1 &
+echo "installgnupg" && sudo apt-get install gnupg -y & sleep 1 &
 wait $!
 echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
@@ -79,7 +79,7 @@ echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
 
 PID=$!
-echo "installeth" && apt-get install ethereum & sleep 1 &
+echo "installeth" && apt-get install ethereum -y & sleep 1 &
 wait $!
 echo "Process 1 ended at time $(date +%T) with exit status $?"
 wait
