@@ -3,6 +3,7 @@
 #login ssh
 
 #install chrome remote desktop https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
+#https://en.linuxportal.info/tutorials/troubleshooting/how-can-we-manually-unmask-services-that-are-masked-service-is-masked-that-we-cannot-unmask-with-the-unmask-option-of-the-systemctl-command
 
 sudo apt update
 curl -L -o chrome-remote-desktop_current_amd64.deb \
