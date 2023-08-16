@@ -25,7 +25,7 @@ sudo apt install --assume-yes ./google-chrome-stable_current_amd64.deb
 
 #sudo passwd username
 
-#add to sudoers 
+#add to sudoers  usermod -aG sudo username
 #sudo su
 #vi /etc/sudoers
 
