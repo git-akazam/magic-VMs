@@ -44,3 +44,17 @@ sudo apt install nodejs
 sudo apt install npm
 
 sudo apt install ufw
+
+
+
+mkdir ~/.config/chrome-remote-desktop
+You15:27
+sudo systemctl status chrome-remote-desktop@$USER
+You15:30
+sudo service chrome-remote-desktop restart
+Brodie Gould15:31
+https://askubuntu.com/questions/605381/chrome-remote-desktop-failed-to-start-remote-access-service#:~:text=I%20had%20similar%20problem
+You15:33
+sudo usermod -a -G chrome-remote-desktop $USER
+You15:36
+sudo groupadd chrome-remote-desktop usermod -a -G chrome-remote-desktop
