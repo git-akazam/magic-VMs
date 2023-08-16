@@ -5,6 +5,12 @@
 #install chrome remote desktop https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
 #https://en.linuxportal.info/tutorials/troubleshooting/how-can-we-manually-unmask-services-that-are-masked-service-is-masked-that-we-cannot-unmask-with-the-unmask-option-of-the-systemctl-command
 
+curl -L -o chrome-remote-desktop_115.0.5790.10_amd64.deb \
+    https://deb.rug.nl/ppa/mirror/dl.google.com/linux/chrome-remote-desktop/deb/pool/main/c/chrome-remote-desktop/chrome-remote-desktop_115.0.5790.10_amd64.deb
+sudo DEBIAN_FRONTEND=noninteractive \
+    apt-get install --assume-yes ./chrome-remote-desktop_115.0.5790.10_amd64.deb
+
+    
 sudo apt update
 curl -L -o chrome-remote-desktop_current_amd64.deb \
     https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
